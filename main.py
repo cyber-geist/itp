@@ -8,10 +8,11 @@ def query(a, b):
     user = input("> ")
     if user.upper() in chars:
         return user.upper()
+    elif user.upper() == "STOP":
+        exit()
     else:
         return "QUERY ERROR"
 
-#print(query("Waffles, pancakes, or neither?", ["Waffles", "Pancakes", "Neither"]))
 print("You are a knight under king Demarcus Bartholomew James III and you have been charged with protecting the king's crown for 24 hours.\nUnbeknownst to him, the evil forces of the warlock smelvin have been commanded to steal the crown at any cost.\nRemember, if you fail, the king will not be happy, and you will likely face a very painful and very public execution.")
 x = query("You arrive at the king's personal vault in the middle of the great forest, prepared to protect the crown, when you realize that it’s a little past midnight.\nYou’re tired, hungry, and scared.", ["Stay awake near the crown", "Take a nap", "Sneak into the forest to fill your canteen", "Go back to the castle for a snack"])
 if x == "A":
@@ -54,7 +55,6 @@ if x == "A":
                     if x == "A":
                         print("You decide that no matter how amazing your traps are, there's no guarantee that they won’t get in, so you head back to the castle to present the king with his crown.")
                         print("You arrive at the castle to greet the king\nPleased with your ability to protect the crown through all of these shenanigans\nWhen you walk into the throne room, though, the king seems surprised to see you\n“How on earth are you still alive?” when you look at him, confused, he elaborates\n“This was designed to be a public execution! My middle name is smelvin, I sent the orcs! I stole the crown! It was all planned!” the king places his head in his palms and gives a heavy sigh\n“But I suppose if you managed to protect the crown through all of this, then you do actually have some worthwhile skills\nYou may live.” And with that, you are escorted out of the castle with nothing to show for your efforts but sleep deprivation and trust issues.")
-                        ending = 1
                     elif x == "B":
                         print("You decide to stay in the vault, after all it would be a shame to spend so many hours on those traps just to have no one witness them go off.")
                         print("You’re peering out the window of the vault, waiting for the first orc to show up\nWhen you realize that it has been 24 hours, and that you are officially done protecting the crown\nYou are so overjoyed by this fact that you don’t notice the first trap going off\nYou let out a hearty chuckle\nThose orcs don’t stand a chance\nAn hour passes without another trap going off, which seems odd, so you decide to check the first trap\nWhen you peer into the spike pit, surprise turns to horror as you realize that the king himself has fallen in and died\nThere is only one option now\nRun away, and never return.")
